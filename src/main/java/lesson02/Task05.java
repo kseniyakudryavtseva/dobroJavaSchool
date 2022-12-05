@@ -6,6 +6,7 @@ public class Task05 {
     public static void main(String[] args) {
         miniGame();
     }
+
     public static void miniGame() {
         int r = (int) (Math.random() * 100);
         System.out.println("Введите число:");
@@ -16,15 +17,12 @@ public class Task05 {
             int i = Integer.parseInt(input);
             if (r > i) {
                 System.out.println("Введите число побольше!");
-                continue;
             } else if (r < i) {
                 System.out.println("Введите число поменьше!");
-                continue;
             } else {
                 System.out.println("Угадали!");
                 break;
             }
         }
-        return;
     }
 }
