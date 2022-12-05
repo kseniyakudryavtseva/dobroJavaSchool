@@ -9,27 +9,17 @@ public class Task01 {
         person.talk("I'm happy!");
         person.move("Bali");
         Robot robot = new Robot(1,2, Robot.Direction.LEFT);
-        System.out.println(robot.getX());
-        System.out.println(robot.getY());
-        System.out.println(robot.getDirection());
+        System.out.println("X = "+ robot.getX()+ " Y = " + robot.getY() + " Направление: " + robot.getDirection());
         robot.stepForward();
-        System.out.println(robot.getX());
-        System.out.println(robot.getY());
-        System.out.println(robot.getDirection());
+        System.out.println("X = "+ robot.getX()+ " Y = " + robot.getY() + " Направление: " + robot.getDirection());
         robot.turnRight();
         robot.stepForward();
-        System.out.println(robot.getX());
-        System.out.println(robot.getY());
-        System.out.println(robot.getDirection());
+        System.out.println("X = "+ robot.getX()+ " Y = " + robot.getY() + " Направление: " + robot.getDirection());
         robot.turnRight();
         robot.stepForward();
-        System.out.println(robot.getX());
-        System.out.println(robot.getY());
-        System.out.println(robot.getDirection());
+        System.out.println("X = "+ robot.getX()+ " Y = " + robot.getY() + " Направление: " + robot.getDirection());
         robot.turnLeft();
         robot.stepForward();
-        System.out.println(robot.getX());
-        System.out.println(robot.getY());
-        System.out.println(robot.getDirection());
+        System.out.println("X = "+ robot.getX()+ " Y = " + robot.getY() + " Направление: " + robot.getDirection());
     }
 }
