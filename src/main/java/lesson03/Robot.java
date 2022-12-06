@@ -68,6 +68,7 @@ public class Robot {
             this.x = this.x + 1;
         }
     }
+
     @Override
     public String toString() {
         return "Robot{" +
