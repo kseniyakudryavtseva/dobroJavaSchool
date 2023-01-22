@@ -9,6 +9,6 @@ public class Square implements Shape {
 
     @Override
     public double area() {
-        return lenght * lenght;
+        return this.lenght * this.lenght;
     }
 }
