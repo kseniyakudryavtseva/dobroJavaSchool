@@ -23,7 +23,7 @@ public class Money {
     public Money minus(Money other) {
         int result_rub = rub - other.rub;
         int result_penny = penny - other.penny;
-        if (result_penny<0) {
+        if (result_penny < 0) {
             result_rub--;
             result_penny = penny + 100 - other.penny;
         }
@@ -33,10 +33,9 @@ public class Money {
     public Money multiply(int multiplier) {
         int result_rub = rub * multiplier;
         int result_penny = penny * multiplier;
-        if ( result_penny>=100){
-            int x = result_penny/100;
-            result_rub = result_rub + x;
-            result_penny = result_penny%100;
+        if (result_penny >= 100) {
+            result_rub = result_rub + result_penny / 100;
+            result_penny = result_penny % 100;
         }
         return new Money(result_rub, result_penny);
     }

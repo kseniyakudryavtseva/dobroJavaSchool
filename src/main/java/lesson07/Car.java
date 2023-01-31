@@ -2,7 +2,7 @@ package lesson07;
 
 import java.util.Objects;
 
-public class Car {
+public class Car implements Cloneable{
     private final String model;
     private final int weight;
     private final Driver driver;
