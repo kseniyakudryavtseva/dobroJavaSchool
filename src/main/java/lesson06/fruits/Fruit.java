@@ -1,12 +1,11 @@
 package lesson06.fruits;
 
 public abstract class Fruit {
-    public int weight;
-    static int counter = 0;
+    public double weight;
 
-    public Fruit(int weight){
+    public Fruit(double weight) {
         this.weight = weight;
-        counter++;
     }
-    public abstract int price();
+
+    public abstract double getPrice();
 }

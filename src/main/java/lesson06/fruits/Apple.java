@@ -1,18 +1,15 @@
 package lesson06.fruits;
 
-public class Apple extends Fruit{
+public class Apple extends Fruit {
+    public static double sum = 0;
+    public static double applePrice = 80;
 
-    static int counter = 0;
-    public Apple(int weight){
+    public Apple(int weight) {
         super(weight);
-        counter++;
     }
 
-    public double totalApplePrice(){
-        return this.price()*counter;
-    }
     @Override
-    public int price() {
-        return super.weight*80;
+    public double getPrice() {
+        return weight * applePrice;
     }
 }
