@@ -29,7 +29,7 @@ public class MyLoginService implements LoginService {
                     throw new WrongLoginException("Логин содержит недопустимый символ " + loginResult[i]);
                 }
             }
-            if (loginResult.length < 3 || loginResult.length > 20) {
+            if (loginResult.length <= 3 || loginResult.length >= 20) {
                 throw new WrongLoginException("Логин должен быть больше 3х символов и меньше 20");
             }
         }

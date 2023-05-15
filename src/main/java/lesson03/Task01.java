@@ -92,8 +92,6 @@ public class Task01 {
                 } else {
                     robot.stepForward();
                 }
-            } else {
-                break;
             }
         }
 
